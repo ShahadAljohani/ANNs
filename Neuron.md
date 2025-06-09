@@ -30,3 +30,26 @@ $$
 \phi(x) = \(\frac{1}{1 + e^{-x}} \)
 $$
 
+![SigmoidFunction](https://github.com/user-attachments/assets/76ba4a8e-8725-4f2c-ab0d-19eef62c6692)
+
+*Note that the Threshold function and the Sigmoid function are useful when the dependent variable is binary \\Sigmoid(P=1) 
+
+3- **Rectifier Funcrtion**
+--called ReLU function
+
+$$
+\phi(x) =\max(x,0)
+$$
+
+![RectefierFuncion](https://github.com/user-attachments/assets/529a23c0-27c0-4753-bb18-c6f6d02f8637)
+
+4- **Hyberbolic Tangent (tanh)**
+
+$$
+\phi(x) = \(\frac{1 - e^{-2x}}{1 + e^{-2x}} \)
+$$
+
+![HyberbolicTangentFunction](https://github.com/user-attachments/assets/9f675039-4802-4fb0-bc13-9e3ab2610ba4)
+
+
+
