@@ -52,4 +52,13 @@ $$
 ![HyberbolicTangentFunction](https://github.com/user-attachments/assets/9f675039-4802-4fb0-bc13-9e3ab2610ba4)
 
 
+# Cost Function
 
+$$
+ c = \frac{1}{2} (\hat{y} - y)^2 
+$$
+
+it shows the error in the function
+
+**Our goal is to lower the cost function**
+  ,the lower cost function the closer $\hat{y}$ to y
