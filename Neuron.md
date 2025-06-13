@@ -2,11 +2,10 @@
 -- "In a neural network we don't tell a computer how to solve our problem. Instead, it learns from observational data figuring out its own solution to the problem at hand"
 
 **Key definitions:**
-- **Artificial Neuron:** a node (unit)
+- **Artificial Neuron (Perceptron):** a node (unit)
 - **Synapse:** the connections between the neurons
 - **Weight:** a real number assigned to the synapse, expressing the importance of the respective inputs to the outputs
-- **Threshold** a real number parameter of the neuron
-- **Perceptron** = neuron
+- **Threshold:** a real number parameter of the neuron
 
 
 
@@ -28,6 +27,7 @@ it takes several binary inputs (x1, x2,...,xn) to produce SINGLE binary output (
 to compute the output we need weights, by determining whether the wegihted sum   
 
 $$ \sum_j w_j  x_j $$
+
 is less or greater than some threshold value (explained under Threshold Function[1](#ref1))
 
 
@@ -43,7 +43,7 @@ $$
 
 it could be one of the four functions:
 
- <a Threshold function="ref1"></a> [1]-**Threshold function:** 
+ - <a name="ref1"></a> [1] **Threshold function:** 
 
  $$
  \phi\(x)={ 1, x \geq 
