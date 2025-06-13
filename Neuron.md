@@ -1,11 +1,39 @@
 # Artificial Neuron
+-- "In a neural network we don't tell a computer how to solve our problem. Instead, it learns from observational data figuring out its own solution to the problem at hand"
 
 **Key definitions:**
 - **Artificial Neuron:** a node (unit)
 - **Synapse:** the connections between the neurons
-- **Weight:** the numeric value assigned to the synapse
+- **Weight:** a real number assigned to the synapse, expressing the importance of the respective inputs to the outputs
+- **Threshold** a real number parameter of the neuron
+- **Perceptron** = neuron
 
-## Inside a neuron
+
+
+*Neural network uses the trained data to automatically learn patterns and infer rules for recognition or classification
+
+
+# ANN representation
+in neural network, simply we have 3 layers:
+
+- Input layer
+
+- Perceptron (Activation layer)
+
+- Output layer
+----------------------
+
+# How does perceptrons work?
+it takes several binary inputs (x1, x2,...,xn) to produce SINGLE binary output (which means it'll be 0/1)
+to compute the output we need weights, by determining whether the wegihted sum   
+
+$$ \sum_j w_j  x_j $$
+is less or greater than some threshold value (explained under Threshold Function[1](#ref1))
+
+
+
+
+## Inside a perceptron 
 
 - **The activation function:**
 
@@ -13,9 +41,9 @@ $$
 \phi\(\sum_{i=1}^n w_i x_i + b)
 $$
 
-it could be ont of the four functions:
+it could be one of the four functions:
 
- 1-**Threshold function:** 
+ <a Threshold function="ref1"></a> [1]-**Threshold function:** 
 
  $$
  \phi\(x)={ 1, x \geq 
@@ -62,3 +90,21 @@ it shows the error in the function
 
 **Our goal is to lower the cost function**
   ,the lower cost function the closer $\hat{y}$ to y
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------
+References:
+- Neural networs and deep learning book, by Mark Nielson
+- Udemy course
+- 
