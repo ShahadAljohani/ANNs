@@ -6,8 +6,8 @@
 - **Synapse:** the connections between the neurons
 - **Weight:** a real number assigned to the synapse, expressing the importance of the respective inputs to the outputs
 - **Threshold:** a real number parameter of the neuron
-
-
+- **Input evidence:** data or features given to a neuron to make a decision 
+- **Bias:** measure of how easy it is to get the perceptron to fire (output a 1)
 
 *Neural network uses the trained data to automatically learn patterns and infer rules for recognition or classification
 
@@ -21,17 +21,42 @@ in neural network, simply we have 3 layers:
 
 - Output layer
 ----------------------
-
 # How does perceptrons work?
 it takes several binary inputs (x1, x2,...,xn) to produce SINGLE binary output (which means it'll be 0/1)
 to compute the output we need weights, by determining whether the wegihted sum   
 
 $$ \sum_j w_j  x_j $$
 
-is less or greater than some threshold value (explained under Threshold Function[1](#ref1))
+is less or greater than some threshold value (explained under Threshold Function [1](#ref1))
+- *Weight
+the larger value of w indicates that it matters a lot to you.
+by varying the weights and the threshold, we can get different models of decision
+perceptron can weight up different kinds of evidence to make decision. And **it should seem plausible that a complex network of perceptrons could make quite subtle decisions**
 
 
+\\\\\\\\\\\\\\\\\phooooooottttttttttooooooooooooo\\\\\\\\\\\\\\\\\\\\
 
+
+- Layers of preceptron:
+first layer (column) of perceptrons is making a very simple decisio, by weighing the input evidence
+second layer, perceptrons make a decision at more complex and more abstract level
+an so on.
+
+**A many-layer network of perceptrons can engage in sophisticated decision making**
+
+
+**Preceptron has one signle output** --> the multiple output arrows indicate that the output from one perceptron is being used ad input to several other perceptrons 
+
+
+# Perceptron bias 
+to simplify the description of perceptron, we will use bias instead of a threshold, which will be rewritten as:
+
+
+perceptron with big bias make it extremely easy for perceptron to output a 1
+if the bias is negative -> difficult for the perceptron to output a 1
+
+**Perceptrons can be used to compute the elementary logical functions (underlying computation) such as AND, OR and NAND
+----------------------
 
 ## Inside a perceptron 
 
@@ -43,12 +68,16 @@ $$
 
 it could be one of the four functions:
 
- - <a name="ref1"></a> [1] **Threshold function:** 
+ - <a name="ref1"></a> [1] **Threshold function:**
 
- $$
- \phi\(x)={ 1, x \geq 
-            0, x<0}
- $$
+   
+$$
+\text{output} =
+\begin{cases}
+0 & \text{if } \sum_j w_j x_j \leq \text{threshold} \\
+1 & \text{if } \sum_j w_j x_j > \text{threshold}
+\end{cases}
+$$
 
 ![Screenshot (500)](https://github.com/user-attachments/assets/0a0bbab9-8c38-491f-bafa-5dc088522297)
 
@@ -103,7 +132,7 @@ it shows the error in the function
 
 
 
---------------------------
+----------------------
 References:
 - Neural networs and deep learning book, by Mark Nielson
 - Udemy course
