@@ -58,6 +58,20 @@ if the bias is negative -> difficult for the perceptron to output a 1
 **Perceptrons can be used to compute the elementary logical functions (underlying computation) such as AND, OR and NAND
 ----------------------
 
+We can devise the learning algrithms which it can tune the weights and biases of a network of artificial neurons.
+**why does the tuning of weights happens?** it happens in reponse of an external stimuli without direct intervention by a programmer.
+**WHY learning algorithms and not just lying on logical gates?** learning algorithms enables us to use artificial neurons in a radically different way to conventional logic,
+in which a neural network can SIMPLY learn to solve problems (unlike using convetional circuit it would be extremely difficult sometimes).
+
+----------------------
+When our network contains perceptrons, a small change(delta) in the weights or bias of any SINGLE perceptron in the network can sometime cause the output of that perceptron to completely flip. That makes it difficult to see how to gradually modify the wights and biases so that the network gets closer to the desired behaviour.
+ok so, **HOW can we overcome this problem?** by introducing you to a new type of artificial neuron:
+
+## - Sigmoid neurons
+
+
+----------------------
+
 ## Inside a perceptron 
 
 - **The activation function:**
